@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">零用錢管理系統</string>
+    <string-array name="deposit">
+        <item>總存款</item>
+        <item>總收入</item>
+        <item>總支出</item>
+    </string-array>
+
+    <string name="RegularOptions">一般選項</string>
+    <string name="DepositOverview">存款總覽</string>
+
+    <string name="Income">收入</string>
+    <string name="Expenses">支出</string>
+
+    <string name="title_expenses">支出</string>
+    <string name="eat_expenses">食</string>
+    <string name="dressing_expenses">衣</string>
+    <string name="room_expenses">住</string>
+    <string name="transportation_expenses">行</string>
+    <string name="study_expenses">育</string>
+    <string name="entertainment_expenses">樂</string>
+
+    <string name="title_income">支出</string>
+    <string name="eat_income">食</string>
+    <string name="dressing_income">衣</string>
+    <string name="room_income">住</string>
+    <string name="transportation_income">行</string>
+    <string name="study_income">育</string>
+    <string name="entertainment_income">樂</string>
+</resources>
