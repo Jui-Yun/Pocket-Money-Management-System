@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    // LinearLayout 布局的背景顏色
+    <solid android:color="#FCF6E0" />
+
+    // LinearLayout 布局的邊框的顏色與粗細
+    <stroke
+        android:width="2dp"
+        android:color="@color/teal_700" />
+
+    <padding
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp" />
+
+    // 設定弧角
+    <corners android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:radius="8dp"/>
+</shape>

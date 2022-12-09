@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEFAE"
+    android:orientation="vertical"
+    tools:context=".IncomeOption">
+
+    <TextView
+        android:id="@+id/ExpensesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/title_income"
+        android:textColor="@color/teal_700"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corners_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/foodImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/eat_icon"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <ImageView
+                                android:id="@+id/clothesImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/dressing_icon" />
+
+                            <ImageView
+                                android:id="@+id/houseImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/room_icon" />
+
+                            <ImageView
+                                android:id="@+id/transportationImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/transportation_icon" />
+
+                            <ImageView
+                                android:id="@+id/teachineImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/study_icon"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <ImageView
+                                android:id="@+id/performanceImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/entertainment_icon" />
+
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/expensesType"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/foodUnit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/eat_income"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/clothesUnit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/dressing_income"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/houseUnit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/room_income"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/transportationUnit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/transportation_income"
+                                android:textSize="10sp" />
+
+                            <RadioButton
+                                android:id="@+id/teachingUnit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/study_income"
+                                android:textSize="12dp"
+                                tools:ignore="TextContrastCheck" />
+
+                            <RadioButton
+                                android:id="@+id/performanceUnit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/entertainment_income"
+                                android:textSize="12dp" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="7"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btn_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="8"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btn_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="9"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="4"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btn_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="5"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btn_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="6"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="1"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btn_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="2"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btn_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="3"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="0"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btn_clear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="C"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btn_del"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        app:srcCompat="@android:drawable/ic_input_delete"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="+"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btn_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="-"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btn_equals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="="
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="send"
+        android:text="Send" />
+
+</LinearLayout>

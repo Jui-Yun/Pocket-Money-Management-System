@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Pocket Money Management System</string>
+    <string-array name="deposit">
+        <item>Total Deposit</item>
+        <item>Total Revenue</item>
+        <item>Total Expenses</item>
+    </string-array>
+
+    <string name="RegularOptions">Regular Options</string>
+    <string name="DepositOverview">Deposit Overview</string>
+
+    <string name="Income">Income</string>
+    <string name="Expenses">Expenses</string>
+
+    <string name="title_expenses">Expenses</string>
+    <string name="eat_expenses">Eating</string>
+    <string name="dressing_expenses">Dressing</string>
+    <string name="room_expenses">Room</string>
+    <string name="transportation_expenses">Transportation</string>
+    <string name="study_expenses">Study</string>
+    <string name="entertainment_expenses">Entertainment</string>
+
+    <string name="title_income">Income</string>
+    <string name="eat_income">Food Selling</string>
+    <string name="dressing_income">Clothes Selling</string>
+    <string name="room_income">House Renting</string>
+    <string name="transportation_income">Transportation Selling</string>
+    <string name="study_income">Teaching</string>
+    <string name="entertainment_income">Performance</string>
+</resources>
