@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ポケットマネー管理システム</string>
+    <string-array name="deposit">
+        <item>総預金</item>
+        <item>総収入</item>
+        <item>総経費</item>
+    </string-array>
+
+    <string name="RegularOptions">一般的なオプション</string>
+    <string name="DepositOverview">預金の概要</string>
+
+    <string name="Income">所得</string>
+    <string name="Expenses">支出</string>
+
+    <string name="title_expenses">支出</string>
+    <string name="eat_expenses">食べます</string>
+    <string name="dressing_expenses">ドレッシング</string>
+    <string name="room_expenses">住む</string>
+    <string name="transportation_expenses">行きます</string>
+    <string name="study_expenses">学び</string>
+    <string name="entertainment_expenses">遊び</string>
+
+    <string name="title_income">支出</string>
+    <string name="eat_income">食べます</string>
+    <string name="dressing_income">ドレッシング</string>
+    <string name="room_income">住む</string>
+    <string name="transportation_income">行きます</string>
+    <string name="study_income">学び</string>
+    <string name="entertainment_income">遊び</string>
+</resources>
